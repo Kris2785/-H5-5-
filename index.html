@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>凿通天山 · 筑福万民｜互动游戏新闻</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="phone-frame">
+      <header class="top-bar">
+        <div class="brand-block">
+          <p class="eyebrow">互动游戏新闻 H5</p>
+          <h1>凿通天山 · 筑福万民</h1>
+        </div>
+        <button id="soundBtn" class="icon-btn" type="button" aria-label="切换音效">音效开</button>
+      </header>
+
+      <main id="gameRoot" class="screen-area" aria-live="polite"></main>
+
+      <section class="hud">
+        <div class="progress-wrap">
+          <span id="stageLabel">准备启动</span>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-pill">
+            <span>工程勋章</span>
+            <strong id="badgeCount">0 / 5</strong>
+          </div>
+          <div class="stat-pill">
+            <span>民生故事卡</span>
+            <strong id="storyCount">0 / 5</strong>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="game.js"></script>
+</body>
+</html>
